@@ -1,0 +1,79 @@
+@import "tailwindcss";
+
+@theme inline {
+  --color-brand-cyan: #3AE5FF;
+  --color-brand-purple: #8F6BFF;
+  --color-brand-deep-purple: #7A63FF;
+  --color-brand-pink: #F25CC1;
+  --color-brand-gold: #F3C98B;
+
+  --color-surface-dark: #0A0A0F;
+  --color-surface-darker: #050508;
+  --color-surface-light: #F5F5FF;
+  --color-surface-off: #FAFAFA;
+
+  --color-text-primary: #111111;
+  --color-text-secondary: #555555;
+  --color-text-muted: #888888;
+
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "Space Grotesk", "Inter", system-ui, sans-serif;
+
+  --animate-fade-in-up: fadeInUp 0.8s ease-out forwards;
+  --animate-gradient-shift: gradientShift 8s ease infinite;
+  --animate-pulse-slow: pulse 4s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+  --animate-marquee: marquee 30s linear infinite;
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes gradientShift {
+  0%, 100% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  background: #ffffff;
+  color: var(--color-text-primary);
+}
+
+::selection {
+  background-color: rgba(58, 229, 255, 0.2);
+}
+
+.gradient-text {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(135deg, #3AE5FF 0%, #7A63FF 50%, #F3C98B 100%);
+  background-size: 200% auto;
+}
+
+.gradient-text-vivid {
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-image: linear-gradient(135deg, #3AE5FF 0%, #8F6BFF 50%, #F25CC1 100%);
+}
+
+.gradient-border {
+  border-image: linear-gradient(135deg, #3AE5FF, #8F6BFF, #F25CC1) 1;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
