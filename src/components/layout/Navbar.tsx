@@ -31,13 +31,13 @@ export default function Navbar() {
                 scrolled ? "text-text-primary" : "text-white"
               }`}
             >
-              FSZT
+              {SITE.shortName}
               <span
                 className={`font-normal ml-1 transition-colors duration-300 ${
                   scrolled ? "text-text-muted" : "text-white/50"
                 }`}
               >
-                Partners
+                {SITE.suffix}
               </span>
             </a>
 

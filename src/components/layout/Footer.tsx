@@ -7,9 +7,9 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           <div>
             <span className="font-display text-lg font-bold text-white">
-              {SITE.name.split(" ")[0]}
+              {SITE.shortName}
               <span className="font-normal text-white/40 ml-1">
-                Partners
+                {SITE.suffix}
               </span>
               <span className="font-normal text-white/40 ml-1">
                 Inc
@@ -25,13 +25,13 @@ export default function Footer() {
               {SITE.email}
             </a>
             <span className="hidden md:inline">&middot;</span>
-            <span>FSZT.Partners</span>
+            <span>{SITE.shortName}.{SITE.suffix}</span>
           </div>
         </div>
 
         <div className="mt-8 pt-8 border-t border-white/5 flex flex-col md:flex-row items-center justify-between gap-4">
           <p className="text-xs text-white/25">
-            &copy; 2026 FSZT Partners Inc. All rights reserved.
+            &copy; 2026 {SITE.name} Inc. All rights reserved.
           </p>
           <p className="text-xs text-white/25">
             Made with <span className="text-red-500">❤</span> in SF

@@ -1,5 +1,7 @@
 export const SITE = {
   name: "FSZT Partners",
+  shortName: "FSZT",
+  suffix: "Partners",
   tagline: "AI-First Consulting | Strategy That Ships",
   email: "hello@fszt.partners",
   url: "https://fszt.partners",
@@ -11,6 +13,28 @@ export const HERO = {
   subtitle:
     "We don\u2019t advise from the sidelines \u2014 we embed, build, and ship AI-native systems that transform how enterprises operate.",
   cta: "Get in Touch",
+  scenes: [
+    {
+      eyebrow: "01 \u2014 AI-First Consulting",
+      title: "Strategy That Ships.",
+      copy: "We don\u2019t advise from the sidelines \u2014 we embed, build, and ship AI-native systems that transform how enterprises operate.",
+    },
+    {
+      eyebrow: "02 \u2014 Operating Model",
+      title: "AI is our operating system.",
+      copy: "Traditional firms are still adopting AI. We are operating as AI \u2014 senior talent, agents embedded in every workflow, outcomes that compound.",
+    },
+    {
+      eyebrow: "03 \u2014 The 4 D\u2019s",
+      title: "Diagnose. Design. Deploy. Defend.",
+      copy: "From AI baseline to Chief AI Officer \u2014 a four-stage system that ships working capability, not playbooks.",
+    },
+    {
+      eyebrow: "04 \u2014 The Choice",
+      title: "Lead, or be forced to follow.",
+      copy: "Every company will become AI-first. The only question is whether you choose to lead \u2014 or get forced to follow.",
+    },
+  ],
 } as const;
 
 export const MANIFESTO = {
